@@ -1,1 +1,7 @@
-bin
+**/bin
+#*.txt
+# Compiled class file
+#*.class
+
+#/Task21PersonasCompanhia/**/*.class
+#Task21PersonasCompanhia/**/*.class
