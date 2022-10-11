@@ -41,4 +41,8 @@ public class Persona {
         this.direccion = direccion;
     }
 
+    public String saludar() {
+        return "Hola";
+    }
+
 }

@@ -23,4 +23,13 @@ public class Empleado extends Persona {
         this.remuneracion = remuneracion;
     }
 
+    public void aumentarRemuneracion(int porcentaje) {
+        this.remuneracion = this.remuneracion + this.remuneracion * (double) porcentaje / 100;
+    }
+
+    @Override
+    public String saludar() {
+        return "soy el empleado ";
+    }
+
 }
