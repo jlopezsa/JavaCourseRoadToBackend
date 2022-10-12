@@ -52,16 +52,14 @@ public class Persona {
         return "Hola Persona";
     }
 
-
     @Override
     public String toString() {
-        return "{" +
-            " nombre='" + getNombre() + "'" +
-            ", apellido='" + getApellido() + "'" +
-            ", numeroFiscal='" + getNumeroFiscal() + "'" +
-            ", direccion='" + getDireccion() + "'" +
-            "}";
+        return this.saludar() + "{" +
+                " nombre='" + getNombre() + "'" +
+                ", apellido='" + getApellido() + "'" +
+                ", numeroFiscal='" + getNumeroFiscal() + "'" +
+                ", direccion='" + getDireccion() + "'" +
+                "}";
     }
-
 
 }
