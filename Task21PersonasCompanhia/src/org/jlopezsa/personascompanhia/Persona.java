@@ -9,6 +9,13 @@ public class Persona {
     public Persona() {
     }
 
+    public Persona(String nombre, String apellido, String numeroFiscal, String direccion) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.numeroFiscal = numeroFiscal;
+        this.direccion = direccion;
+    }
+
     public String getNombre() {
         return this.nombre;
     }
@@ -42,7 +49,19 @@ public class Persona {
     }
 
     public String saludar() {
-        return "Hola";
+        return "Hola Persona";
     }
+
+
+    @Override
+    public String toString() {
+        return "{" +
+            " nombre='" + getNombre() + "'" +
+            ", apellido='" + getApellido() + "'" +
+            ", numeroFiscal='" + getNumeroFiscal() + "'" +
+            ", direccion='" + getDireccion() + "'" +
+            "}";
+    }
+
 
 }

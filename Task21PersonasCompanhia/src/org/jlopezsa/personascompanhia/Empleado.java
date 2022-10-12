@@ -7,6 +7,18 @@ public class Empleado extends Persona {
     public Empleado() {
     }
 
+    public Empleado(double remuneracion, int empleadoId) {
+        this.remuneracion = remuneracion;
+        this.empleadoId = empleadoId;
+    }
+
+    public Empleado(String nombre, String apellido, String numeroFiscal, String direccion, double remuneracion, int empleadoId) {
+        super(nombre, apellido, numeroFiscal, direccion);
+        this.remuneracion = remuneracion;
+        this.empleadoId = empleadoId;
+    }
+
+
     public int getEmpleadoId() {
         return this.empleadoId;
     }
@@ -30,6 +42,14 @@ public class Empleado extends Persona {
     @Override
     public String saludar() {
         return "soy el empleado ";
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + "{" +
+            " remuneracion='" + getRemuneracion() + "'" +
+            ", empleadoId='" + getEmpleadoId() + "'" +
+            "}";
     }
 
 }
