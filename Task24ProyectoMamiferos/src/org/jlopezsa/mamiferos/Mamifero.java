@@ -55,11 +55,11 @@ abstract public class Mamifero {
         this.nombreCientifico = nombreCientifico;
     }
 
-    abstract public void comer();
+    abstract public String comer();
 
-    abstract public void dormir();
+    abstract public String dormir();
 
-    abstract public void correr();
+    abstract public String correr();
 
-    abstract public void comunicarse();
+    abstract public String comunicarse();
 }

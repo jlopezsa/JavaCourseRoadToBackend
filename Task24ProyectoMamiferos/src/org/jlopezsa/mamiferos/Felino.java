@@ -1,6 +1,8 @@
 package org.jlopezsa.mamiferos;
 
-public class Felino extends Mamifero {
+abstract public class Felino extends Mamifero {
+    // Clase hija abstracta no está obligada de implementar los métodos abstractos.
+    
     private float tamanhoGarras;
     private int velocidad;
 
